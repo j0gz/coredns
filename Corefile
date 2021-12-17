@@ -1,30 +1,5 @@
-azuredev.nykreditnet.net {
-  log
-  errors
-  cache 30
-  azure nyk-weu1-con-net-rg:azuredev.nykreditnet.net {
-    tenant b05b20f7-d701-422a-8295-d38ab501738b
-    client 18852a11-420f-4f9a-a4d4-f925b410d715
-    subscription 70ef6662-1e3f-4398-8463-c7ac1acf8ada
-    secret WCB9_wcJ5AAe6TP4XXCSr2TEbFWjleaExB
-    access private
-  }
-}  
-nykreditnet.net {
-  forward . 10.125.96.100 10.96.128.11 10.116.132.10 10.125.96.200
-  log
-  errors
-  cache 30
-}
-sif.jndata.net {
-  forward . 10.125.96.100 10.96.128.11 10.116.132.10 10.125.96.200
-  log
-  errors
-  cache 30
-}     
 . {
   forward . 168.63.129.16
   log
-  cache 30
   errors
 }
